@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>CRUD Operations</title>
+
+  <!-- JavaScript file -->
+  <script src="script.js"></script>   
 </head>
 <body class="bg-slate-400">
         <div class="text-center text-4xl pt-3.5">
@@ -12,28 +15,28 @@
             &nbsp;
             <hr class="mt-5 border-3">
         </div>
-        <form>
+        <form method="post">
             <div class="flex items-center mt-16 justify-center">
                 <table class="min-h-full">
                     <tr>
                         <td>
                 <label class="mr-3">Name:</label></td>
                 <td>
-                <input type="text" name="name" placeholder="Enter your name" class="text-center p-1 px-5">
+                <input type="text" name="name" placeholder="Enter your name" class="text-center p-1 px-5" id="userName">
                         </td>
                     </tr>
                     <tr>
                         <td>
                 <label class="mr-3">Email:</label></td>
                 <td>
-                <input type="email" name="email" placeholder="Enter your mail" class="text-center p-1 px-5">
+                <input type="email" name="email" placeholder="Enter your mail" class="text-center p-1 px-5" id="email">
                 </td>
                     </tr>
             <tr>
                 <td>
                 <label class="mr-3">Contact:</label></td>
                 <td>
-                <input type="number" name="number" placeholder="Enter your number" class=" text-center p-1 px-5">
+                <input type="number" name="number" placeholder="Enter your number" class=" text-center p-1 px-5" id="contact">
                 </td>
             </tr>
             <tr>
