@@ -1,41 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>CRUD operations</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-    <body>
-        <div class="text-center">
-            <h1 class="font-bold text-3xl italic">PHP-MySQL CRUD</h1>
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>CRUD Operations</title>
+</head>
+<body class="bg-slate-400">
+        <div class="text-center text-4xl pt-3.5">
+            <h1><strong>PHP-MySQL</strong></h1>
             &nbsp;
-                <hr>
+            <hr class="mt-5 border-3">
         </div>
-                <table>
+        <form>
+            <div class="flex items-center mt-16 justify-center">
+                <table class="min-h-full">
                     <tr>
                         <td>
-                            <form>
-                            <div>
-                                <Label>Name:</Label><br>
-                                <input type="text" name="fullname">
-                            </div>
-                            <div>
-                                <Label>Email:</Label><br>
-                                <input type="email" name="email">
-                            </div>
-                            <div>
-                                <Label>Contact:</Label><br>
-                                <input type="number" name="number">
-                                </div>
-                                <div>
-                                    <button class="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                                        Save Details
-                                      </button>
-                                </div>
-                            </form>
+                <label class="mr-3">Name:</label></td>
+                <td>
+                <input type="text" name="name" placeholder="Enter your name" class="text-center p-1 px-5">
                         </td>
-                        <td></td>
                     </tr>
-                </table>
-    </body>
+                    <tr>
+                        <td>
+                <label class="mr-3">Email:</label></td>
+                <td>
+                <input type="email" name="email" placeholder="Enter your mail" class="text-center p-1 px-5">
+                </td>
+                    </tr>
+            <tr>
+                <td>
+                <label class="mr-3">Contact:</label></td>
+                <td>
+                <input type="number" name="number" placeholder="Enter your number" class=" text-center p-1 px-5">
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td class="pt-2">
+            <button class="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Save Details</button>
+                </td>
+            </tr>
+            </table>
+            </div>
+        </form>
+</body>
 </html>
